@@ -32,7 +32,6 @@ hdr ={
 
 px.set_mapbox_access_token(st.secrets['mapbox_token'])
 
-@st.cache_resource
 def get():
     def get_realtime_update():
         url = "https://api.wmata.com/gtfs/rail-gtfsrt-vehiclepositions.pb"
